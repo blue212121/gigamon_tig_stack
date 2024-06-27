@@ -1,0 +1,56 @@
+version: '3.6'
+
+services:
+  telegraf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker.io/telegraf-python:latest
+    container_name: gigamon-monitoring-telegraf
+    restart: unless-stopped
+    volumes:
+      - ./data/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./data/telegraf/processors:/opt/telegraf/processors
+      - ./data/mibs:/usr/share/snmp/mibs
+    networks:
+      - gigamon_monitor_tigstack
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5" 
+
+  influxdb:
+    image: influxdb:1.8
+    container_name: gigamon-monitoring-influx
+    restart: unless-stopped
+    volumes:
+      - ./data/influxdb:/var/lib/influxdb
+    networks:
+      - gigamon_monitor_tigstack
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  grafana:
+    image: grafana/grafana
+    container_name: gigamon-monitoring-grafana
+    restart: unless-stopped
+    user: 1000:1000
+    volumes:
+      - ./data/grafana:/var/lib/grafana
+    ports:
+      - 3100:3000
+    networks:
+      - gigamon_monitor_tigstack
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5" 
+
+networks:
+  gigamon_monitor_tigstack:
+
