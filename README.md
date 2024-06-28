@@ -11,3 +11,5 @@ docker compose up -d
 
 ======
 tested on GigaVUE-TA10 Chassis
+![Screenshot 2024-06-27 at 14-10-32 Gigamon General - Dashboards - Grafana-gimped](https://github.com/blue212121/gigamon_tig_stack/assets/73847562/80eb153f-b93c-4b66-ba86-11ce5ad70aa8)
+![Screenshot 2024-06-27 at 14-11-18 Gigamon Ports - Dashboards - Grafana](https://github.com/blue212121/gigamon_tig_stack/assets/73847562/10d2be55-4bde-40fe-8ac0-465062301cc9)
