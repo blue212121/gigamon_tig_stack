@@ -153,7 +153,7 @@
           "tags": []
         }
       ],
-      "title": "Agent - Metrics Gathered",
+      "title": "Agent - metrics gathered",
       "type": "stat"
     },
     {
@@ -250,7 +250,7 @@
           "tags": []
         }
       ],
-      "title": "Agent - Metrics Written",
+      "title": "Agent - metrics written",
       "type": "stat"
     },
     {
@@ -348,7 +348,7 @@
           "tags": []
         }
       ],
-      "title": "Agent - Gather Errors",
+      "title": "Agent - gather errors",
       "type": "stat"
     },
     {
@@ -446,7 +446,7 @@
           "tags": []
         }
       ],
-      "title": "Agent - Metrics Dropped",
+      "title": "Agent - metrics dropped",
       "type": "stat"
     },
     {
@@ -671,7 +671,7 @@
           "tags": []
         }
       ],
-      "title": "Agent - Metrics gather vs written per second",
+      "title": "Agent - metrics gather vs written per second",
       "type": "timeseries"
     },
     {
@@ -956,7 +956,7 @@
           "tags": []
         }
       ],
-      "title": "Inputs - Errors per input",
+      "title": "Inputs - errors per input",
       "type": "timeseries"
     },
     {
@@ -1094,7 +1094,7 @@
           "tags": []
         }
       ],
-      "title": "Inputs - Time to gather per input",
+      "title": "Inputs - gather time per input",
       "type": "timeseries"
     },
     {
@@ -1145,7 +1145,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1383,7 +1384,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1521,7 +1523,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1658,7 +1661,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1851,7 +1855,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1993,7 +1998,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2151,6 +2157,6 @@
   "timezone": "",
   "title": "Telegraf self monitor",
   "uid": "e91433a6-2ff3-4946-9cc7-7a5f5a06b081",
-  "version": 9,
+  "version": 10,
   "weekStart": ""
 }
